@@ -67,10 +67,15 @@ body * {
   z-index: 1;
   left: 0;
   transform: translateY(-50%);
+  animation: slide-back 1s;
 }
+
 .light #btt button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.4s forwards;
+}
+#btt button:hover{
+  outline: 8px solid var(--surface-color-hover);
+
 }
 #btt span {
   display: block;
@@ -145,4 +150,21 @@ ul li a:hover {
 }
 #z a {
   text-decoration: none;
+}
+/*Animation*/
+@keyframes slide-in{
+  fron{
+left: 0;
+  }
+  to{
+left: 61%;
+  }
+}
+@keyframes slide-back{
+  fron{
+    left: 61%;
+  }
+  to{
+    left: 0;
+  }
 }
