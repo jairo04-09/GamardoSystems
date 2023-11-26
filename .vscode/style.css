@@ -38,19 +38,19 @@ body * {
 #profile {
   text-align: center;
   padding: 24px;
-  
 }
-#profile img {
+#foto1{
   /*display: block;
   margin: auto;*/
   width: 110px;
-  position: relative;
 }
-#foto2 {
+#foto2{
   position: absolute;
-  right: 114px;
- 
-  }
+    width: 110px; 
+    right: 46%;
+   transition: 2s ease-in-out;
+    
+ }
 #profile p {
   font-weight: 500;
   font-size: 16px;

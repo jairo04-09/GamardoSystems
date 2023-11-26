@@ -17,13 +17,15 @@ function toggleMode() {
     // se tiver sem light mode: manter a imagen normal
     img.setAttribute("src", "./assets/1jg.jpg")
   }
-  }
+}
+  let imagem = document.querySelector("#foto2");
+setInterval(function() {
 
-let imagem = document.querySelector("#foto2")
-setInterval(function () {
-  if (profile.style.opacity == 1) {
-    profile.style.opacity = 0
-  } else {
-    profile.style.opacity = 1
-  }
-}, 3000)
+    if (imagem.style.opacity == 1) {
+        imagem.style.opacity = 0
+    }
+    else {
+        imagem.style.opacity = 1
+    }
+
+}, 3000);
