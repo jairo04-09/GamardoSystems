@@ -26,7 +26,7 @@ body {
 }
 
 body * {
-  font-family: "Inter", sans-serif;
+  /*font-family: "Inter", sans-serif;*/
   color: var(--text-color);
 }
 #container {
@@ -38,19 +38,20 @@ body * {
 #profile {
   text-align: center;
   padding: 24px;
+  font-family: "Inter", sans-serif;
 }
-#foto1{
+
+#foto1 {
   /*display: block;
   margin: auto;*/
   width: 110px;
 }
-#foto2{
+#foto2 {
   position: absolute;
-    width: 110px; 
-    right: 46%;
-   transition: 2s ease-in-out;
-    
- }
+  width: 110px;
+  right: 46%;
+  transition: 2s ease-in-out;
+}
 #profile p {
   font-weight: 500;
   font-size: 16px;
@@ -62,6 +63,24 @@ body * {
   width: 64px;
   margin: 6px auto;
 }
+#btt span {
+  visibility: hidden;
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+   z-index: 1;
+}
+#btt:hover span {
+  visibility: visible;
+}
+
 #btt button {
   background: white var(--btt-bg-url) no-repeat center;
   width: 24px;
@@ -80,9 +99,8 @@ body * {
 .light #btt button {
   animation: slide-in 0.4s forwards;
 }
-#btt button:hover{
+#btt button:hover {
   outline: 8px solid var(--surface-color-hover);
-
 }
 #btt span {
   display: block;
@@ -99,6 +117,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  font-family: "Inter", sans-serif;
 }
 ul li a {
   display: flex;
@@ -159,19 +178,19 @@ ul li a:hover {
   text-decoration: none;
 }
 /*Animation*/
-@keyframes slide-in{
-  fron{
-left: 0;
+@keyframes slide-in {
+  fron {
+    left: 0;
   }
-  to{
-left: 61%;
-  }
-}
-@keyframes slide-back{
-  fron{
+  to {
     left: 61%;
   }
-  to{
+}
+@keyframes slide-back {
+  fron {
+    left: 61%;
+  }
+  to {
     left: 0;
   }
 }
